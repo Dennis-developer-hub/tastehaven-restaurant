@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery | Taste Haven Restaurant</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Header -->
+<header>
+  <div class="logo">Taste Haven</div>
+
+  <!-- Hamburger button -->
+  <div class="menu-toggle" id="menu-toggle">☰</div>
+
+  <nav id="nav-links">
+    <a href="index.html" class="active">Home</a>
+    <a href="menu.html">Menu</a>
+    <a href="about.html">About</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+
+
+
+  <!-- Gallery Section -->
+  <section class="gallery">
+    <h1>Our Food Gallery</h1>
+    <p>Take a look at our delicious dishes, drinks, and happy customers!</p>
+
+    <div class="gallery-grid">
+      <div class="gallery-item"><img src="myimage/pancake.jpeg" alt="pancake"></div>
+      <div class="gallery-item"><img src="myimage/nyama waru.jpg" alt="Tea"></div>
+      <div class="gallery-item"><img src="myimage/jollof rice.jpeg" alt="Jollof Rice"></div>
+      <div class="gallery-item"><img src="myimage/noodles.jpeg" alt="noodles"></div>
+      <div class="gallery-item"><img src="myimage/ugali skuma.jpg" alt="Ugali & Sukuma"></div>
+      <div class="gallery-item"><img src="myimage/pilau.jpeg" alt="Grilled Meat"></div>
+      <div class="gallery-item"><img src="myimage/sandwich.jpeg" alt="Happy Customers"></div>
+      <div class="gallery-item"><img src="myimage/room2.jpg" alt="Restaurant Interior"></div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Taste Haven Restaurant | All Rights Reserved</p>
+  </footer>
+<script>
+  const menuToggle = document.getElementById('menu-toggle');
+  const navLinks = document.getElementById('nav-links');
+
+  menuToggle.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+    menuToggle.classList.toggle('active'); // 👈 this adds/removes the color change
+  });
+</script>
+
+
+</body>
+
+</script>
+
+</html>
