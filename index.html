@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Taste Haven Restaurant</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Header Section -->
+  <header>
+  <div class="logo">Taste Haven</div>
+
+  <!-- Hamburger button -->
+  <div class="menu-toggle" id="menu-toggle">☰</div>
+
+  <nav id="nav-links">
+    <a href="index.html" class="active">Home</a>
+    <a href="menu.html">Menu</a>
+    <a href="about.html">About</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+
+
+
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h1>Welcome to Taste Haven</h1>
+    <p>Delicious Meals, Freshly Made Every Day</p>
+   <a href="menu.html" class="btn">View Menu</a>
+
+  </section>
+
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Taste Haven Restaurant | All Rights Reserved</p>
+  </footer>
+<script>
+  const menuToggle = document.getElementById('menu-toggle');
+  const navLinks = document.getElementById('nav-links');
+
+  menuToggle.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+    menuToggle.classList.toggle('active'); // 👈 this adds/removes the color change
+  });
+</script>
+
+
+
+</body>
+
+</script>
+
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us | Taste Haven Restaurant</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Header -->
+<header>
+  <div class="logo">Taste Haven</div>
+
+  <!-- Hamburger button -->
+  <div class="menu-toggle" id="menu-toggle">☰</div>
+
+  <nav id="nav-links">
+    <a href="index.html" class="active">Home</a>
+    <a href="menu.html">Menu</a>
+    <a href="about.html">About</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+
+
+  <nav id="nav-links">
+    <a href="index.html" class="active">Home</a>
+    <a href="menu.html">Menu</a>
+    <a href="about.html">About</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+
+
+  <!-- About Section -->
+  <section class="about">
+    <div class="about-container">
+      <div class="about-image">
+        <img src="myimage/room.jpg" alt="Taste Haven Restaurant">
+      </div>
+      <div class="about-text">
+        <h1>About Taste Haven</h1>
+        <p>
+          Welcome to <strong>Taste Haven</strong> — a cozy spot where delicious food meets great vibes. 
+          Since our humble beginnings, our mission has been simple: to serve tasty, freshly prepared meals 
+          made with love and the best local ingredients.
+        </p>
+        <p>
+          From our soft chapatis and spicy jollof rice to our refreshing fresh juices, 
+          every dish tells a story of passion, flavor, and culture. 
+          Whether you're here for breakfast tea or a hearty lunch, we promise a warm welcome and unforgettable taste.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Chef Section -->
+  <section class="chef">
+    <h2>Meet Our Head Chef</h2>
+    <div class="chef-container">
+      <img src="myimage/4457.jpg" alt="Head Chef">
+      <div class="chef-text">
+        <p>
+          Our Head Chef, <strong>Chef Peter</strong>, brings over 10 years of culinary experience 
+          blending traditional African recipes with modern twists. His passion for food and creativity 
+          makes every meal a delightful experience.
+        </p>
+      </div>
+    </div>
+  </section>
+ 
+
+
+
+
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Taste Haven Restaurant | All Rights Reserved</p>
+  </footer>
+<script>
+  const menuToggle = document.getElementById('menu-toggle');
+  const navLinks = document.getElementById('nav-links');
+
+  menuToggle.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+    menuToggle.classList.toggle('active'); // 👈 this adds/removes the color change
+  });
+</script>
+
+</body>
+
+
+</html>
